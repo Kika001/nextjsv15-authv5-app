@@ -1,0 +1,56 @@
+src/
+├── app/
+│   ├── (auth)/             # Groupe de routes pour l'authentification
+│   │   ├── login/
+│   │   │   └── page.tsx
+│   │   └── register/
+│   │       └── page.tsx
+│   ├── api/
+│   ├── dashboard/
+│   │   ├── categories/
+│   │   │   └── page.tsx
+│   │   ├── products/
+│   │   │   └── page.tsx
+│   │   ├── settings/
+│   │   │   ├── account/
+│   │   │   │   └── page.tsx      # Page "Mon Compte"
+│   │   │   ├── password/
+│   │   │   │   └── page.tsx      # Page "Mot de passe"
+│   │   │   ├── layout.tsx        # Layout pour la section des paramètres
+│   │   │   └── page.tsx          # Page de redirection pour /dashboard/settings
+│   │   ├── layout.tsx            # Layout principal du tableau de bord
+│   │   └── page.tsx              # Page d'accueil du tableau de bord
+│   ├── layout.tsx                # Layout racine de l'application
+│   └── page.tsx                  # Page d'accueil publique (/)
+│
+├── components/
+│   ├── forms/
+│   │   ├── password-form.tsx
+│   │   └── profile-form.tsx
+│   ├── nav/
+│   │   ├── dashboard-nav.tsx
+│   │   ├── sidebar-nav.tsx
+│   │   └── user-nav.tsx
+│   ├── providers/
+│   │   └── theme-provider.tsx    # Fournisseur pour le thème (dark/light)
+│   ├── ui/                     # Composants de base (Button, Card, etc.)
+│   └── theme-toggle.tsx
+│
+├── database/
+│   └── schema.ts                 # Schémas de base de données Drizzle
+│
+├── lib/
+│   └── utils.ts                  # Fonctions utilitaires (ex: cn)
+│
+├── schemas/
+│   └── index.ts                  # Fichier central pour les schémas de validation Zod
+│
+├── types/
+│   └── index.ts                  # Définitions de types TypeScript partagées
+│
+├── actions/
+│   └── user.ts                   # Server Actions pour l'utilisateur
+│
+├── auth.ts                       # Configuration de NextAuth.js
+├── middleware.ts                 # Middleware pour la protection des routes
+└── next-auth.d.ts                # Définitions de types pour NextAuth

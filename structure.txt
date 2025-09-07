@@ -1,0 +1,74 @@
+
+├── drizzle/
+├── public/
+├── script/
+├── src/
+├   └──actions/
+│     └── user.ts
+├   └──app/ 
+│     └── api/
+│     └── dashboard/
+│        ├──  categories/
+│        │   └── page.tsx              # Page pour les catégories de produits
+│        ├── products/
+│        │    └── page.tsx              # Page pour les produits
+│        ├── settings/
+│        │    ├── SettingsAccountPage.tsx # Page "Mon Compte"
+│        │    ├── SettingsLayout.tsx      # Layout pour la section des paramètres
+│        │    └── page.tsx              # Page de redirection pour /settings
+│        ├── DashboardLayout.tsx                # Layout principal du tableau de bord (gère la sidebar, etc.)
+│        └── page.tsx                  # Page d'accueil du tableau de bord
+│     └── home-page-components/
+│     └── login/
+│     └── profile/
+│     └── register/
+│     └── globals.css
+│     └── header.tsx
+│     └── layout.tsx
+│     └── page.tsx
+│
+├── components/ (Composants UI réutilisables)
+│   ├── forms/
+│   │   ├── password-form.tsx
+│   │   └── profile-form.tsx
+│   ├── nav/
+│   │   ├── dashboard-nav.tsx         # Barre de navigation supérieure
+│   │   ├── sidebar-nav.tsx           # Barre de navigation latérale
+│   │   └── user-nav.tsx              # Menu déroulant de l'utilisateur
+│   ├── ui/ (Composants de base générés par shadcn/ui)
+│   │   ├── sheet.tsx
+│   │   └── tooltip.tsx
+│   │   └── ...
+│   └── theme-toggle.tsx 
+│   ├── providers/ 
+│          └── reactQueryProvider.tsx 
+│          └── sessionProvider.tsx  
+│          └── theme-provider.tsx 
+│   ├── authForm.tsx 
+│   ├── dark-mode.tsx 
+│   ├── footer.tsx          
+│   ├── ...
+│
+├──└──  database/ (Configuration de la base de données)
+│          └── index.ts 
+│          └── schema.ts                   # Définition des tables avec Drizzle ORM
+│
+└──└──  lib
+          └──  utils.ts  
+│
+├   └──  schemas/ (Schémas de validation de données)
+│         └── index.ts                    # Fichier central pour toutes les validations Zod (connexion, inscription, etc.)
+│
+├   └── types/ (Définitions de types TypeScript partagés)
+│         └── index.ts                    # Ex: SidebarNavItem, IconName
+│
+├   └── auth.ts
+├   └──middleware.ts
+├   └──next-auth.d.ts
+└──drizzle.config.ts
+└──.env.local
+└──package.json
+└──tsconfig.json
+└──...
+                   
+     
